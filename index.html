@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormularioBasico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="area">
+    <h1 id="nomeform"> Formulario de Cadastro Básico</h1>
+    <p id="subform">Insira seus dados </p>
+    <br>
+</div>
+
+<form>
+    <fieldset class="info">
+        <div>
+            <label for="nome" >Nome</label>
+            <br>
+            <input type="text" name="nome" id="nome " required>
+
+            <div>
+                <label for="nome" >Sobrenome</label>
+                <br>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+    
+            </div>
+            <div>
+                <label for="nome" >Email</label>
+                <br>
+                <input type="text" name="Email" id="email" required>
+    
+            </div>
+    </fieldset>
+
+
+<div class="area">
+    <label>Como ficou sabendo da nossa vaga ?</label>
+    <label> 
+        <br>
+        <br>
+        <input type="radio" name="Indicação" value="indicado" checked>Indicação
+    </label>
+    <label >
+        <input type="radio" name="Instagram" value="midia1">Instagram
+    </label>
+    <label>
+        <input type="radio" name="Linkedin" value="midia2">Linkedin
+    </label>
+</div>
+
+<div class="perg">
+    <label for="niveis">Qual você considera ser seu nivel de conhecimento em programação?</label>
+    <br>
+    <select name="niveis" id="niveis">
+        <option selected disabled value="">Selecione uma opção</option>
+        <option>"Programo em Html"</option>
+        <option>"Não possuo muito conhecimento"</option>
+        <option>"Possuo um conhecimento de nivel médio"</option>
+        <option>"Sou um bom desenvolvedor"</option>
+        <option>"Sou um desenvolvedor completo"</option>
+    </select>
+
+    <fieldset class="grupo">
+        <div class="check">
+            <br>
+            <label>Selecione as tecnologias que você considera ter um nivel de conhecimento médio e /ou superior</label>
+            <input type="checkbox" id="tec1" name="tec1" value="C">
+            <label for="tec1">C</label>
+            <input type="checkbox" id="tec2" name="tec2" value="C++">
+            <label for="tec2">C++</label>
+            <input type="checkbox" id="tec3" name="tec3" value="C#">
+            <label for="tec3">C#</label>
+            <input type="checkbox" id="tec4" name="tec4" value="Java">
+            <label for="tec4">Java </label>
+            <input type="checkbox" id="tec5" name="tec5" value="JavaScript">
+            <label for="tec5">JavaScript</label>
+            <input type="checkbox" id="tec6" name="tec6" value="Python">
+            <label for="tec6">Python</label>
+
+            <div class="perg">
+                <label> Conte um pouco sobre seus estudos.</label>
+                <textarea name="exp" id="exp"  rows="6" style="width: 26em;"></textarea>
+            </div>
+            
+        <button type="submit">Enviar</button>
+            
+        </div>
+    </fieldset>
+   
+</div>
+
+</form>
+    
+</body>
+</html>
